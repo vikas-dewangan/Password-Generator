@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+  <div class="container">
+    <div class="inner-box">
+       <h2>Password Generator</h2>
+        <div class="result">
+         <span id="result"> Enter Length </span> 
+          <i id="clipboard" class="fa fa-floppy-o"></i>
+         </div>
+         <div class="settings" >
+          <lable>Enter Password Length</lable>
+           <input type="number" id="length" min="4" max="20" value="20"/>
+          </div>
+          <div class="settings" >
+            <label for="Uppercase">Include Uppercase </label>
+            <input type="checkbox" id="uppercase" checked class="toggle">
+          </div>
+
+          <div class="settings">
+             <label for="Lowercase">Include Lowercase</label>
+             <input type="checkbox" id="lowercase" checked class="toggle">
+          </div>
+
+          <div class="settings">
+            <label for="Number">Include Number</label>
+            <input type="checkbox" id="number" checked class="toggle">
+           </div>
+
+            <div class="settings">
+             <label for="Symbol">Include Symbols</label>
+            <input type="checkbox" id="symbol" checked class="toggle">
+            </div>
+<button class="btn" id="generate">Generate Password</button>
+   </div>
+ </div>
+ <footer>
+     <div><p><i class="fas fa-hand-point-right"></i> Created by Vikas Dewangan</p></div>
+ </footer>
+<script src="script.js"></script>
+</body>
+</html>
